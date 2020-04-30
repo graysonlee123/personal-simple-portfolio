@@ -1,0 +1,33 @@
+// Import fonts
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap");
+
+// Variables
+$text: #33313a;
+$accent: #502ec7;
+
+// Mixins
+$breakpoints: (
+  "xs": 640px,
+  "s": 768px,
+  "m": 960px,
+  "l": 1024px,
+  "xl": 1024px,
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// Import modules
+@import './layout';
+@import './fonts';
+@import './quotes';
+@import './list';

@@ -1,0 +1,17 @@
+blockquote {
+  margin-bottom: 2rem;
+
+  p {
+    &::before,
+    &::after {
+      content: '"';
+      font-weight: bold;
+    }
+  }
+
+  footer {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.6rem;
+  }
+}

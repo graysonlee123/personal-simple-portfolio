@@ -1,0 +1,38 @@
+body {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  color: $text;
+}
+
+a {
+  color: inherit;
+  transition: 100ms ease-in-out;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+
+h1 {
+  font-size: 4rem;
+  line-height: 4.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}

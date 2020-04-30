@@ -1,0 +1,32 @@
+.grid {
+  @include mq(s) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
+}
+
+.left {
+  min-height: 460px;
+  background: {
+    image: url(./images/photo.jpg);
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+}
+
+.right {
+  overflow-y: scroll;
+  padding: 4rem 2rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 3rem;
+}
