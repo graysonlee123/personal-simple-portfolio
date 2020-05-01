@@ -19,6 +19,10 @@
 .right {
   overflow-y: scroll;
   padding: 2rem;
+
+  .container {
+    max-width: 824px;
+  }
 }
 
 h1,
