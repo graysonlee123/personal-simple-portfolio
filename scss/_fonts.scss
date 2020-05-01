@@ -6,6 +6,9 @@ body {
 a {
   color: inherit;
   transition: 100ms ease-in-out;
+  text-decoration-style: wavy;
+  text-decoration-color: $accent;
+  text-decoration-skip: edges;
 
   &:hover {
     color: $accent;
