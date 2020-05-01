@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display&display=swap");
 @media only screen and (min-width: 768px) {
   .grid {
     display: grid;
@@ -31,38 +31,62 @@ h2 {
 }
 
 body {
-  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-family: "Cabin", Arial, Helvetica, sans-serif;
   color: #33313a;
+}
+
+a::selection, p::selection, h1::selection, h2::selection, h3::selection, footer::selection, div::selection, span::selection, br::selection {
+  background: #b4a4ea;
+}
+a::-moz-selection, p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, footer::-moz-selection, div::-moz-selection, span::-moz-selection, br::-moz-selection {
+  background: #b4a4ea;
 }
 
 a {
   color: inherit;
   transition: 100ms ease-in-out;
-  text-decoration-style: wavy;
-  text-decoration-color: #502ec7;
-  text-decoration-skip: edges;
+  border-bottom: 4px dotted #502ec7;
+  text-decoration: none;
 }
 a:hover {
   color: #502ec7;
 }
 
 h1,
-h2 {
-  font-weight: 800;
+h2,
+h3 {
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-weight: 900;
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 4.6rem;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 3.2rem;
+  }
 }
 
 h3 {
-  font-size: 2.2rem;
-  line-height: 2.8rem;
+  max-width: 824px;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 2.2rem;
+  }
 }
 
 p {
@@ -77,10 +101,11 @@ blockquote p::before, blockquote p::after {
   content: '"';
   font-weight: bold;
 }
-blockquote footer {
+blockquote .author {
   font-style: italic;
   color: rgba(0, 0, 0, 0.5);
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
+  font-size: 1rem;
 }
 
 ul {
